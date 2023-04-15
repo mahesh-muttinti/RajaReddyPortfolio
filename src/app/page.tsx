@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "./page.module.css";
-import birthDayPic from "../../public/group_persons_with_hat.jpg";
+// import birthDayPic from "../../public/group_persons_with_hat.jpg";
+import Resume from "../components/ResumePreview";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,26 +11,24 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Ganga Babu Rachamanti&nbsp;
-          <code className={styles.code}>PUBG Gamer and Family Man</code>
+          Raja Reddy Nagendla&nbsp;
+          <code className={styles.code}>AX Technical Developer</code>
         </p>
       </div>
 
       <div className={styles.center}>
         <Image
           className={styles.logo}
-          src="/gangaBabu.jpg"
-          alt="Ganga babu profile pic"
+          src="/rajaReddy.jpeg"
+          alt="RajaReddy profile pic"
           width={200}
           height={200}
           priority
         />
-        {/* <div className={styles.thirteen}>
-          <Image src="/gangaBabu.jpg" alt="13" width={40} height={31} priority />
-        </div> */}
       </div>
 
-      <div className={styles.fontMono}>
+      <Resume />
+      {/* <div className={styles.fontMono}>
         <p className={styles.center}>
           8th Feb 2023 Came - Wish You a Happy Birth Day. May God bless you and
           protect you with Abundant Love and Grace.
@@ -55,7 +54,7 @@ export default function Home() {
           height={150}
           priority
         />
-      </div>
+      </div> */}
 
       <div className={styles.grid}>
         <a
