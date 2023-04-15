@@ -12,7 +12,9 @@ export default function ResumePreview() {
           initialDoc: "/Raja Latest Resume.pdf",
         },
         viewer.current
-      ).then((instance) => {})
+      ).then((instance: any) => {
+        console.log("instance: ", instance);
+      })
     );
   }, []);
 
